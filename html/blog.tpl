@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS Tutorial by Themesberg</title>
-    <link rel="stylesheet" href="/src/dist/output.css">
+    <link rel="stylesheet" href="/static/css/dist/output.css">
 </head>
 <body>
     <header>
