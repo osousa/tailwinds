@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './src/html/*.{html,js}',
+    './html/*.{html,js}',
   ],
   presets: [],
   darkMode: 'media', // or 'class'
