@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+@layer utilities {
+  .hover-link {
+    @apply g-gradient-to-t from-slate-800 to-slate-800 bg-no-repeat [background-position:0_88%] [background-size:100%_0em] motion-safe:transition-all motion-safe:duration-200 hover:[background-size:100%_100%] hover:text-slate-100 focus:[background-size:100%_100%] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+*/
+
