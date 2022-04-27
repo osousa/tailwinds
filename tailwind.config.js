@@ -1,10 +1,15 @@
 module.exports = {
   content: [
-    './html/*.{html,js}',
+    './html/*.{html,js,tpl}',
   ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    gridTemplateColumns:
+    {
+      '20/80': '20% 80%',
+      'fixed': '40px 260px',
+    },
     screens: {
       sm: '640px',
       md: '768px',
