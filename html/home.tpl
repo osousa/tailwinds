@@ -1,15 +1,11 @@
 {{ define "home" }}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Tutorial by Themesberg</title>
-    <link rel="stylesheet" href="/static/css/dist/output.css">
-</head>
-<body>
 
-    {{ template "header" }}
+{{ template "header" }}
+{{ template "navbar" }}
+
+<body class="flex flex-col min-h-screen">
 
     <!-- Build awesome user interfaces using Tailwind CSS starting from here -->
     <div class="container max-w-3xl mx-auto">
@@ -92,18 +88,34 @@
                         <img alt="Icon github" src="/static/images/github.png" decoding="async" style="visibility: visible; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/static/images/github.png 1x, /static/images/github.png 2x, /static/images/github.png 3x">
                      </div>
                      <div class="flex flex-col ml-5 text-left">
-                        <p class="text-lg text-slate-900 tracking-tight font-bold dark:text-slate-400">osousa.me repo</p>
-                        <p class="text-sm lg:text-base font-light text-gray-800 text-justify">
-                           "it ain't much, but its honest work..."<!-- -->
-                        </p>
+                        <a href="https://github.com/osousa/me">
+                            <p class="text-lg text-slate-900 tracking-tight font-bold dark:text-slate-400">osousa.me repo</p>
+                            <p class="text-sm lg:text-base font-light text-gray-800 text-justify">
+                               "it ain't much, but its honest work..."<!-- -->
+                            </p>
+                        </a>
                      </div>
                   </div>
                   <div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-                     <p class="text-sm">4.5</p>
-                     <span class="flex ml-4">
+                     <p class="text-sm">00</p>
+                     <span class="flex ml-3">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <g transform="translate(128 128) scale(0.72 0.72)" style="">
+                        	<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+                        	<path d="M 45 2.024 C 45 2.024 45 2.024 45 2.024 c -1.398 0 -2.649 0.778 -3.268 2.031 L 29.959 27.911 c -0.099 0.2 -0.29 0.338 -0.51 0.37 L 3.122 32.107 c -1.383 0.201 -2.509 1.151 -2.941 2.48 c -0.432 1.329 -0.079 2.76 0.922 3.736 l 19.049 18.569 c 0.16 0.156 0.233 0.38 0.195 0.599 L 15.85 83.71 c -0.236 1.377 0.319 2.743 1.449 3.564 c 1.129 0.821 2.6 0.927 3.839 0.279 l 23.547 -12.381 c 0.098 -0.051 0.206 -0.077 0.314 -0.077 C 51.721 53.905 50.301 28.878 45 2.024 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,200,80); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        	<path d="M 45 2.024 C 45 2.024 45 2.024 45 2.024 c 1.398 0 2.649 0.778 3.268 2.031 l 11.773 23.856 c 0.099 0.2 0.29 0.338 0.51 0.37 l 26.326 3.826 c 1.383 0.201 2.509 1.151 2.941 2.48 c 0.432 1.329 0.079 2.76 -0.922 3.736 L 69.847 56.892 c -0.16 0.156 -0.233 0.38 -0.195 0.599 L 74.15 83.71 c 0.236 1.377 -0.319 2.743 -1.449 3.564 c -1.129 0.821 -2.6 0.927 -3.839 0.279 L 45.315 75.172 c -0.098 -0.051 -0.206 -0.077 -0.314 -0.077 C 37.08 54.593 38.849 29.395 45 2.024 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,220,100); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                        </g>
+                        </svg>
+
+<!--
                         <svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M1.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
                         </svg>
+                        -->
                      </span>
                   </div>
                </div>

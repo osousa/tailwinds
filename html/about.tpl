@@ -1,28 +1,21 @@
 {{ define "about"  }}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Tutorial by Themesberg</title>
-    <link rel="stylesheet" href="/static/css/dist/output.css">
+{{ template "header" }}
+{{ template "navbar" }}
+<body class="flex flex-col min-h-screen">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-
-    {{ template "header" }}
-
     <div class="container max-w-3xl mx-auto">
         <div class="container flex max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
-            <h1 class="first-letter:font-bold first-letter:font-mono first-letter:text-4xl ml-5 text-3xl lg:text-3xl font-normal text-slate-600 mb-2 lg:mb-6"> About me:</h1>
+            <h1 class="ml-5 text-3xl lg:text-3xl font-normal text-slate-600 mb-2 lg:mb-6"> About me:</h1>
         </div>
         <section class="text-gray-600 body-font">
           <div class="container mx-auto flex flex-col">
             <div class="lg:w-full mx-auto">
-              <div class="flex flex-col sm:flex-row mt-10">
+              <div class="flex flex-col sm:flex-row">
                 <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                   <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
@@ -37,30 +30,19 @@
                   </div>
                 </div>
                 <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                  <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho in 2020 with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on HackTheBox as of now. I'll leave the link to my profile below :)</p>
-                  <a class="text-indigo-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+                  <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on <a href="https://app.hackthebox.com/profile/782594" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">HackTheBox</a> as of now.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <div class="grid md:grid-cols-5 gap-3">
-          
-          
-          
-          
-          
-          <div class=" py-5 col-span-3">
+        <div class="grid md:grid-cols-5 gap-8">
+          <div class="py-5 col-span-3">
             <div class="container">
                 <div class="drop-shadow-md border border-slate-300 rounded overflow-hidden">
                 <!-- accordion-tab  -->
                 <div class="group outline-none accordion-section" tabindex="1">
-                  <div class="group  flex justify-between px-4 py-3 items-center text-gray-500 transition ease duration-500 cursor-pointer pr-10 relative">
+                  <div class="group flex justify-between px-4 py-3 items-center text-gray-500 transition ease duration-500 cursor-pointer pr-10 relative">
                     <div class="group-focus:text-slate-600 transition ease duration-500">
                       Current dev stack
                     </div>
@@ -73,6 +55,7 @@
                         <div class="relative max-w-full mx-2 my-2 justify-center">
                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Golang</span>
                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Python3</span>
+                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">typescript</span>
                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">javascript</span>
                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">ECMA6</span>
                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">nodejs</span>
@@ -167,28 +150,66 @@
                            <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">NeoVim</span>
                            <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gimp</span>
                            <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Photoshop</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gobuster</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Chisel</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Hydra</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">XSStrike</span>
                          </div>
                     </p>
                   </div>
                 </div>
                 <!-- accordion-tab -->
-
-
                </div>
             </div>
           </div>
-        <div class="py-5 col-span-2">
-          <div class="container">
-             <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. By no means am i proclaiming expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
+          <div class="py-5 col-span-2">
+            <div class="container">
+               <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. By no means am i proclaiming expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
+            </div>
           </div>
         </div>
-        </div>
     </div>
-
+    <div class="container max-w-3xl mx-auto relative flex flex-col max-w-3xl py-8 lg:ml-auto border-t border-gray-300 pb-5 lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
+      <div class="grid grid-cols-3 gap-4">
+       <div class="grid grid-cols-5 gap-4">
+        <div><img src="/static/images/Linux-Dark.svg"/></div>
+        <div><img src="/static/images/Git.svg"/></div>
+        <div><img src="/static/images/GoLang.svg"/></div>
+        <div><img src="/static/images/TypeScript.svg"/></div>
+        <div><img src="/static/images/Python-Dark.svg"/></div>
+        <div><img src="/static/images/TailwindCSS-Dark.svg"/></div>
+        <div><img src="/static/images/Svelte.svg"/></div>
+        <!-- <div><img src="/static/images/Photoshop.svg"/></div> -->
+        <div><img src="/static/images/NodeJS-Dark.svg"/></div>
+        <div><img src="/static/images/Docker.svg"/></div>
+        <div><img src="/static/images/C.svg"/></div>
+        <div><img src="/static/images/CSS.svg"/></div>
+        <div><img src="/static/images/NeoVim-Dark.svg"/></div>
+        <div><img src="/static/images/MySQL-Dark.svg"/></div>
+        <div><img src="/static/images/CSS.svg"/></div>
+        <div><img src="/static/images/Github-Dark.svg"/></div>
+       </div> 
+       <div> 
+        <div class="w-full">
+           <div class="coding inverse-toggle px-5 pt-4 shadow-lg text-gray-100 text-sm font-mono subpixel-antialiased 
+                       bg-gray-800  pb-6 pt-4 rounded-lg leading-normal overflow-hidden">
+               <div class="top mb-2 flex">
+                   <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+                   <div class="ml-2 h-3 w-3 bg-orange-300 rounded-full"></div>
+                   <div class="ml-2 h-3 w-3 bg-green-500 rounded-full"></div>
+               </div>
+               <div class="mt-4 flex">
+                   <span class="text-green-400">root:~$</span>
+                   <p class="flex-1 typing items-center pl-2">
+                       ls --width=1 
+                       <br>
+                   </p>
+               </div>
+           </div>
+        </div>
+       </div>
+       <div>
+          <img src="https://www.hackthebox.com/badge/image/782594" alt="hackthebox_badge"/>
+          <p>This is another example of what we can do but it really needs a br i bet but try it out man ... nothing like trying</p>
+       </div>
+      </div> 
+    </div>
     {{ template "footer" }}
 </body>
 </html>

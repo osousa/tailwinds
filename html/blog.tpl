@@ -1,22 +1,18 @@
-{{ define "blog"  }}
+{{ define "blog"  }} 
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Tutorial by Themesberg</title>
-    <link rel="stylesheet" href="/static/css/dist/output.css">
-</head>
-<body>
 
-    {{ template "header" }}
+{{ template "header" }}
+{{ template "navbar" }}
 
+<body class="flex flex-col min-h-screen">
     <div class="container max-w-3xl mx-auto">
         <div class="container flex max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
-            <h1 class="ml-5 text-2xl lg:text-2xl font-normal text-slate-600 mb-2 lg:mb-6"> Latest blog entry</h1>
+            <h1 class="ml-5 text-2xl lg:text-2xl font-normal text-slate-600 mb-2 lg:mb-6">Latest blog entry</h1>
         </div>
 
         {{ range $i := .Post}}

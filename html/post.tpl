@@ -1,22 +1,18 @@
 {{ define "post"  }}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Tutorial by Themesberg</title>
-    <link rel="stylesheet" href="/static/css/dist/output.css">
-</head>
-<body>
+{{ template "header" }}
+{{ template "navbar" }}
 
-    {{ template "header" }}
+<body class="flex flex-col min-h-screen">
+
 
     <div class="container max-w-3xl mx-auto">
         <div class="container flex max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
-            <h1 class="first-letter:font-bold first-letter:font-mono first-letter:text-4xl ml-5 text-3xl lg:text-3xl font-normal text-slate-600 mb-2 lg:mb-6"> {{ .post.Post.Title }}</h1>
+            <h1 class="ml-5 text-3xl lg:text-3xl font-normal text-slate-600 mb-2 lg:mb-6"> {{ .post.Post.Title }}</h1>
         </div>
         <article class="relative flex flex-col max-w-3xl lg:ml-auto lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
            <div class="mb-1 prose prose-slate  dark:prose-dark">
