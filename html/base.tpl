@@ -1,12 +1,12 @@
 {{ define "navbar"}}
- <nav class="flex items-center justify-between container max-w-3xl mx-auto pb-12 pt-6">
+ <nav class="flex items-center justify-between container lg:max-w-xl max-w-3xl mx-auto pb-12 pt-6">
   <!-- Logo -->
   <a href="/">
       <div class="relative"><img src="/static/images/osousa.png" class="" alt="logo"></div>
   </a>                                                                                                                                                                                      
   <div class="hidden lg:block">
    <ul class="flex items-center">
-     <li class="group relative mr-6 mb-1">
+     <li class="group relative text-right mr-6 mb-1">
        <div class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-6 group-hover:w-full group-hover:bg-slate-800"></div>
        <a href="/" class="relative z-30 block px-2 font-body text-lg font-medium text-slate-900 transition-colors group-hover:text-slate-200 dark:text-slate-600 dark:group-hover:text-secondary">
         Home 
@@ -105,7 +105,7 @@
     </div>
   </div>
 
-  <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center lg:text-xs text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 zero copyrights :
     <a class="text-gray-800" href="https://osousa.me/">osousa.me</a>
   </div>

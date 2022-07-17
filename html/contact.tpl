@@ -7,7 +7,7 @@
 <body class="flex flex-col min-h-screen">
 
 
-    <div class="container max-w-3xl mx-auto">
+    <div class="container max-w-3xl lg:max-w-xl mx-auto">
         <div class="container flex max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
@@ -17,13 +17,13 @@
         <article class="relative flex flex-col max-w-3xl lg:ml-auto lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
            <div class="grid grid-cols-3 gap-4">
               <div class="col-span-2 mb-1 prose prose-slate  dark:prose-dark">
-                <p class="text-lg lg:text-base font-light text-gray-800 text-justify mb-8">Get in touch , send me an email, reach me through Matrix or use the <a href="https://github.com/osousa/livematrix">chatbox at the bottom!</a> Thank you for visiting :)  </p>
-                <p class="text-lg lg:text-base font-light text-gray-800 text-justify mb-8">email: [osousa]@[pm.me]  |  Matrix: @osousa:matrix.org  </p>
+                <p class="text-lg lg:text-xs font-light text-gray-800 text-justify mb-8">Get in touch , send me an email, reach me through Matrix or use the <a href="https://github.com/osousa/livematrix">chatbox at the bottom!</a> Thank you for visiting :)  </p>
+                <p class="text-lg lg:text-xs font-light text-gray-800 text-justify mb-8">email: [osousa]@[pm.me]  |  Matrix: @osousa:matrix.org  </p>
               </div>
             </div>
         </article>
 
-        <div class="relative mb-5 max-w-full px-8 py-4 mx-auto bg-white rounded-lg shadow-md">
+        <div class="relative mb-5 max-w-full lg:text-xs px-8 py-4 mx-auto bg-white rounded-lg shadow-md">
             <div class="flex items-center justify-between">
                 <span class="text-sm font-light text-gray-600 "> 04/07/2022 </span>
                 <a class="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">GPG key</a>

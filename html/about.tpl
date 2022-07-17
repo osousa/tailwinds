@@ -5,7 +5,7 @@
 {{ template "navbar" }}
 <body class="flex flex-col min-h-screen">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <div class="container max-w-3xl mx-auto">
+    <div class="container max-w-3xl lg:max-w-xl mx-auto">
         <div class="container flex max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
@@ -30,7 +30,7 @@
                   </div>
                 </div>
                 <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                  <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on <a href="https://app.hackthebox.com/profile/782594" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">HackTheBox</a> as of now.</p>
+                  <p class="leading-relaxed text-md lg:text-xs font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on <a href="https://app.hackthebox.com/profile/782594" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">HackTheBox</a> as of now.</p>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@
         </section>
         <div class="grid md:grid-cols-5 gap-8">
           <div class="py-5 col-span-3">
-            <div class="container">
+            <div class="container flex lg:text-xs">
                 <div class="drop-shadow-md border border-slate-300 rounded overflow-hidden">
                 <!-- accordion-tab  -->
                 <div class="group outline-none accordion-section" tabindex="1">
@@ -160,14 +160,14 @@
           </div>
           <div class="py-5 col-span-2">
             <div class="container">
-               <p class="leading-relaxed text-md lg:text-base font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. By no means am i proclaiming expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
+               <p class="leading-relaxed text-md lg:text-xs font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. By no means am i proclaiming expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
             </div>
           </div>
         </div>
     </div>
-    <div class="container max-w-3xl mx-auto relative flex flex-col max-w-3xl py-8 lg:ml-auto border-t border-gray-300 pb-5 lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
-      <div class="grid grid-cols-3 gap-4">
-       <div class="grid grid-cols-5 gap-4">
+    <div class="container max-w-3xl lg:max-w-xl mx-auto relative flex flex-col max-w-3xl py-8 lg:ml-auto border-t border-gray-300 pb-5 lg:max-w-xl 2xl:max-w-3xl xl:w-[50rem]">
+      <div class="grid grid-cols-3 gap-8">
+       <div class="grid grid-cols-5 gap-1">
         <div><img src="/static/images/Linux-Dark.svg"/></div>
         <div><img src="/static/images/Git.svg"/></div>
         <div><img src="/static/images/GoLang.svg"/></div>
@@ -184,29 +184,40 @@
         <div><img src="/static/images/MySQL-Dark.svg"/></div>
         <div><img src="/static/images/CSS.svg"/></div>
         <div><img src="/static/images/Github-Dark.svg"/></div>
+        <div class="flex col-span-5">
+           <img src="https://www.hackthebox.com/badge/image/782594" alt="hackthebox_badge"/>
+        </div>
        </div> 
-       <div> 
-        <div class="w-full">
-           <div class="coding inverse-toggle px-5 pt-4 shadow-lg text-gray-100 text-sm font-mono subpixel-antialiased 
-                       bg-gray-800  pb-6 pt-4 rounded-lg leading-normal overflow-hidden">
-               <div class="top mb-2 flex">
+       <div class="col-span-2" > 
+        <div class="w-full text-xs">
+           <div class="coding inverse-toggle px-5 pt-4 shadow-lg text-gray-100 text-xs font-mono subpixel-antialiased 
+                       bg-gray-800  pb-2 pt-4 rounded-lg leading-normal overflow-hidden">
+               <div class="top mb-2 flex" style="margin-left: -10px;margin-top: -7px;">
                    <div class="h-3 w-3 bg-red-500 rounded-full"></div>
                    <div class="ml-2 h-3 w-3 bg-orange-300 rounded-full"></div>
                    <div class="ml-2 h-3 w-3 bg-green-500 rounded-full"></div>
                </div>
-               <div class="mt-4 flex">
+               <div class="mt-2 flex">
                    <span class="text-green-400">root:~$</span>
                    <p class="flex-1 typing items-center pl-2">
                        ls --width=1 
                        <br>
                    </p>
                </div>
+               <div>github.txt<br/>linkedin.txt</div>
+               <div class="mt-1 flex">
+                   <span class="text-green-400">root:~$</span>
+                   <p class="flex-1 typing items-center pl-2">
+                       cat *.txt
+                       <br>
+                   </p>
+               </div>
+               <div>
+                <a href="https://github.com/osousa" target="_blank">github.com/osousa</a><br/>
+                <a href="https://linkedin.com/in/sousahj" target="_blank">linkedin.com/in/sousahj</a>
+               </div>
            </div>
         </div>
-       </div>
-       <div>
-          <img src="https://www.hackthebox.com/badge/image/782594" alt="hackthebox_badge"/>
-          <p>This is another example of what we can do but it really needs a br i bet but try it out man ... nothing like trying</p>
        </div>
       </div> 
     </div>

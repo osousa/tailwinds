@@ -7,16 +7,16 @@
 <body class="flex flex-col min-h-screen">
 
 
-    <div class="container max-w-3xl mx-auto">
-        <div class="container flex max-w-3xl mx-auto m-5">
+    <div class="container max-w-3xl lg:max-w-xl mx-auto">
+        <div class="container flex max-w-3xl lg:max-w-xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
             <h1 class="ml-5 text-3xl lg:text-3xl font-normal text-slate-600 mb-2 lg:mb-6"> {{ .post.Post.Title }}</h1>
         </div>
-        <article class="relative flex flex-col max-w-3xl lg:ml-auto lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
+        <article class="relative flex flex-col max-w-3xl lg:max-w-xl lg:ml-auto 2xl:max-w-3xl xl:w-[50rem]">
            <div class="mb-1 prose prose-slate  dark:prose-dark">
-              <p class="text-lg lg:text-base font-light text-gray-800 text-justify mb-8">{{ .post.Post.Body }}</p>
+              <p class="text-lg lg:text-xs font-light text-gray-800 text-justify mb-8">{{ .post.Post.Body }}</p>
            </div>
            <!-- left-side date
            <div class="mt-auto items-center justify-end">
@@ -34,9 +34,9 @@
         <div class="relative mb-5 max-w-full px-8 py-4 mx-auto bg-white rounded-lg shadow-md">
             <div class="flex items-center justify-between">
                 <span class="text-sm font-light text-gray-600 ">{{ formatDate .post.Post.Date }}</span>
-                <a class="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">Design</a>
+                <a class="px-3 py-1 text-sm lg:text-xs font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">Design</a>
             </div>
-            <div class="relative flex mt-2 ">
+            <div class="relative flex mt-2 lg:text-xs">
                 <p class="mt-2 text-gray-600 ">If you spot a mistake on this article, or you have any suggestions, drop me an email or ping me through Matrix!</p>
             </div>
             <!-- Author

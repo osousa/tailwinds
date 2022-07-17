@@ -7,8 +7,8 @@
 {{ template "navbar" }}
 
 <body class="flex flex-col min-h-screen">
-    <div class="container max-w-3xl mx-auto">
-        <div class="container flex max-w-3xl mx-auto m-5">
+    <div class="container lg:max-w-xl max-w-3xl mx-auto">
+        <div class="container flex lg:max-w-xl max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
@@ -16,10 +16,10 @@
         </div>
 
         {{ range $i := .Post}}
-        <article class="relative flex flex-col max-w-3xl lg:ml-auto border-b border-gray-300 pb-5 lg:max-w-3xl 2xl:max-w-3xl xl:max-w-none xl:w-[50rem]">
+        <article class="relative flex flex-col max-w-3xl lg:ml-auto mb-8 border-b border-gray-300 pb-5 lg:max-w-xl 2xl:max-w-3xl xl:w-[50rem]">
            <h3 class="mb-4 text-xl text-slate-900 tracking-tight font-bold dark:text-slate-400"><a href="/blog/{{$i.Id}}/{{$i.Url}}">{{$i.Title}}</a></h3>
            <div class="mb-1 prose prose-slate  dark:prose-dark">
-              <p class="text-md lg:text-base font-light text-gray-800 text-justify mb-8">{{ $i.Abstract}}</p>
+              <p class="text-md lg:text-xs font-light text-gray-800 text-justify mb-8">{{ $i.Abstract}}</p>
            </div>
            <div class="mt-auto items-center justify-end">
               <dl>
