@@ -8,9 +8,9 @@
 <body class="flex flex-col min-h-screen">
 
     <!-- Build awesome user interfaces using Tailwind CSS starting from here -->
-    <div class="container lg:max-w-xl max-w-3xl mx-auto">
+    <div class="container lg:max-w-xl xl:max-w-3xl mx-auto">
         <h1 class="text-4xl lg:text-4xl font-regular text-slate-600 mb-2 lg:mb-6">Thoughts, ideas and lessons</h1>
-        <p class="text-md font-light lg:text-xs text-gray-800 text-justify mb-8"> Things i've learned that i deem as worthy of bring forth to a broader audience, of about 5 people, i'll write them here. I am a software engineer with a master's degree from University of Minho, i enjoy writing code and play CTFs. As of late i've been lurking around hackthebox exclusively. Python's been a great companion through my programmer's endeavors, now, i resort to Go more often than not. I enjoy sci-fi books, mechanical keyboards and tech in general. </p>
+        <p class="xl:text-base font-light lg:text-xs text-gray-800 text-justify mb-8"> Things i've learned that i deem as worthy of bring forth to a broader audience, of about 5 people, i'll write them here. I am a software engineer with a master's degree from University of Minho, i enjoy writing code and play CTFs. As of late i've been lurking around hackthebox exclusively. Python's been a great companion through my programmer's endeavors, now, i resort to Go more often than not. I enjoy sci-fi books, mechanical keyboards and tech in general. </p>
     </div>
     
     <div class="pt-4">
@@ -19,18 +19,18 @@
 
     <!-- Latest blog entry -->
 
-    <div class="container lg:max-w-xl max-w-3xl mx-auto">
-        <div class="container flex lg:max-w-xl max-w-3xl mx-auto m-5">
+    <div class="container lg:max-w-xl xl:max-w-3xl mx-auto">
+        <div class="container flex lg:max-w-xl xl:max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
             <h1 class="ml-5 text-2xl lg:text-2xl font-normal text-slate-600 mb-2 lg:mb-6"> Latest blog entry</h1>
         </div>
 
-        <article class="relative flex flex-col lg:max-w-xl max-w-3xl lg:ml-auto 2xl:max-w-3xl">
+        <article class="relative flex flex-col lg:max-w-xl xl:max-w-3xl lg:ml-auto 2xl:max-w-3xl">
            <h3 class="mb-4 text-xl text-slate-900 tracking-tight font-bold dark:text-slate-400"><a href="/blog/{{.p.Post.Id}}/{{.p.Post.Url}}">{{ .p.Post.Title }}</a></h3>
            <div class="mb-1 prose prose-slate  dark:prose-dark">
-              <p class="text-md lg:text-xs font-light text-gray-800 text-justify mb-8">{{ .p.Post.Abstract }}</p>
+              <p class="xl:text-base lg:text-xs font-light text-gray-800 text-justify mb-8">{{ .p.Post.Abstract }}</p>
            </div>
            <div class="mt-auto items-center justify-end">
               <dl>
@@ -72,14 +72,14 @@
 
     <!-- Git Repo -->
     <section class="pt-10 pb-64">
-        <div class="container flex lg:max-w-xl max-w-3xl mx-auto m-5 border-t border-gray-300 pt-5">
+        <div class="container flex lg:max-w-xl xl:max-w-3xl mx-auto m-5 border-t border-gray-300 pt-5">
             <div class="relative">
                 <img src="/static/images/branch.png" class="object-scale-down h-12 w-12">
             </div>
             <h1 class="ml-5 text-2xl lg:text-2xl font-normal text-slate-600 mb-2 lg:mb-6"> This place, on git</h1>
         </div>
 
-        <div class="container flex lg:max-w-xl max-w-3xl mx-auto m-5 pt-5">
+        <div class="container flex lg:max-w-xl xl:max-w-3xl mx-auto m-5 pt-5">
             <div class="max-w-full grow border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-3 flex flex-col">
                <div class="flex flex-col xl:flex-row w-full xl:items-center">
                   <div class="flex order-2 xl:order-1">

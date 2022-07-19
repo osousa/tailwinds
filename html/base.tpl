@@ -1,5 +1,5 @@
 {{ define "navbar"}}
- <nav class="flex items-center justify-between container lg:max-w-xl max-w-3xl mx-auto pb-12 pt-6">
+ <nav class="flex items-center justify-between container lg:max-w-xl xl:max-w-3xl mx-auto pb-12 pt-6">
   <!-- Logo -->
   <a href="/">
       <div class="relative"><img src="/static/images/osousa.png" class="" alt="logo"></div>

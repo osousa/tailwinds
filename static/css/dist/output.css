@@ -779,10 +779,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -1584,10 +1580,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 36rem;
   }
 
-  .lg\:max-w-3xl {
-    max-width: 48rem;
-  }
-
   .lg\:whitespace-nowrap {
     white-space: nowrap;
   }
@@ -1631,8 +1623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50rem;
   }
 
-  .xl\:max-w-none {
-    max-width: none;
+  .xl\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .xl\:flex-row {
@@ -1641,6 +1633,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:items-center {
     align-items: center;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 

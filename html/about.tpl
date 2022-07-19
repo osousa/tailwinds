@@ -5,8 +5,8 @@
 {{ template "navbar" }}
 <body class="flex flex-col min-h-screen">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <div class="container max-w-3xl lg:max-w-xl mx-auto">
-        <div class="container flex max-w-3xl mx-auto m-5">
+    <div class="container xl:max-w-3xl lg:max-w-xl mx-auto">
+        <div class="container flex xl:max-w-3xl mx-auto m-5">
             <div class="relative">
                 <img src="/static/images/blog.png" class="object-scale-down h-12 w-12">
             </div>
@@ -30,7 +30,7 @@
                   </div>
                 </div>
                 <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                  <p class="leading-relaxed text-md lg:text-xs font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on <a href="https://app.hackthebox.com/profile/782594" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">HackTheBox</a> as of now.</p>
+                  <p class="leading-relaxed xl:text-base lg:text-xs font-light text-gray-800 text-justify mb-8">Between a few personal interests, computer science, programming and tech in general are the most prominent ones. I graduated in 2020 from University of Minho with a master's degree in software Engineering, having started the 5 year course in 2015. But i have been programming before that, having owned a company from 2009 up until 2016 when i sold my share. As a hobby i play CTFs, mainly on <a href="https://app.hackthebox.com/profile/782594" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">HackTheBox</a> as of now.</p>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@
         </section>
         <div class="grid md:grid-cols-5 gap-8">
           <div class="py-5 col-span-3">
-            <div class="container flex lg:text-xs">
+            <div class="container flex lg:text-xs xl:text-base">
                 <div class="drop-shadow-md border border-slate-300 rounded overflow-hidden">
                 <!-- accordion-tab  -->
                 <div class="group outline-none accordion-section" tabindex="1">
@@ -53,26 +53,26 @@
                   <div class="group-focus:max-h-screen max-h-0 bg-gray-800 px-4 overflow-hidden ease duration-500">
                     <p class="p-2 text-gray-400 text-justify">
                         <div class="relative max-w-full mx-2 my-2 justify-center">
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Golang</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Python3</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">typescript</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">javascript</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">ECMA6</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">nodejs</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Svelte</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Tailwind</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Django</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Flask</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">MariaDB</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Redis</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Postman</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Docker</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Docker-Compose</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Git</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Github</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Github-Actions</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Bash</span>
-                          <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">GNU/Linux</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Golang</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Python3</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">typescript</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">javascript</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">ECMA6</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">nodejs</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Svelte</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Tailwind</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Django</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Flask</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">MariaDB</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Redis</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Postman</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Docker</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Docker-Compose</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Git</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Github</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Github-Actions</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Bash</span>
+                          <span class="xl:text-sm inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">GNU/Linux</span>
                         </div>
                     </p>
                   </div>
@@ -91,15 +91,15 @@
                   <div class="group-focus:max-h-screen max-h-0 bg-gray-800 px-4 overflow-hidden ease duration-500">
                     <p class="p-2 text-gray-400 text-justify">
                          <div class="relative max-w-full mx-2 my-2 justify-center">
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">C</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Haskell</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Java</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">NoSQL</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">PHP</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Laravel</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Awk</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">lua</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">SVN</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">C</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Haskell</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Java</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">NoSQL</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">PHP</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Laravel</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Awk</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">lua</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">SVN</span>
                          </div>
                     </p>
                   </div>
@@ -118,17 +118,17 @@
                   <div class="group-focus:max-h-screen max-h-0 bg-gray-800 px-4 overflow-hidden ease duration-500">
                     <p class="p-2 text-gray-400 text-justify">
                          <div class="relative max-w-full mx-2 my-2 justify-center">
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">nmap</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">netcat</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Burp Suite</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">sqlmap</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Metasploit</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">wireshark</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">mitmproxy</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gobuster</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Chisel</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Hydra</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">XSStrike</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">nmap</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">netcat</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Burp Suite</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">sqlmap</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Metasploit</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">wireshark</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">mitmproxy</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gobuster</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Chisel</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Hydra</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">XSStrike</span>
                          </div>
                     </p>
                   </div>
@@ -147,9 +147,9 @@
                   <div class="group-focus:max-h-screen max-h-0 bg-gray-800 px-4 overflow-hidden ease duration-500">
                     <p class="p-2 text-gray-400 text-justify">
                          <div class="relative max-w-full mx-2 my-2 justify-center">
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">NeoVim</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gimp</span>
-                           <span class="text-md inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Photoshop</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">NeoVim</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Gimp</span>
+                           <span class="xl:text-base inline-block my-1 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded">Photoshop</span>
                          </div>
                     </p>
                   </div>
@@ -160,12 +160,12 @@
           </div>
           <div class="py-5 col-span-2">
             <div class="container">
-               <p class="leading-relaxed text-md lg:text-xs font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. By no means am i proclaiming expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
+               <p class="leading-relaxed xl:text-base lg:text-xs font-light text-gray-800 text-justify mb-8">Over the years i've experimented with different languages, paradigms, database types, libraries and frameworks, whether in the academic or in real world. I proclaime no expertize in any of these, but i strive to find the best solution for problems involving them, in a timely maner. I never settle for the first course of action, rarely it's the "right way".</p>
             </div>
           </div>
         </div>
     </div>
-    <div class="container max-w-3xl lg:max-w-xl mx-auto relative flex flex-col max-w-3xl py-8 lg:ml-auto border-t border-gray-300 pb-5 lg:max-w-xl 2xl:max-w-3xl xl:w-[50rem]">
+    <div class="container xl:max-w-3xl lg:max-w-xl mx-auto relative flex flex-col xl:max-w-3xl py-8 lg:ml-auto border-t border-gray-300 pb-5 lg:max-w-xl 2xl:max-w-3xl xl:w-[50rem]">
       <div class="grid grid-cols-3 gap-8">
        <div class="grid grid-cols-5 gap-1">
         <div><img src="/static/images/Linux-Dark.svg"/></div>
@@ -184,8 +184,10 @@
         <div><img src="/static/images/MySQL-Dark.svg"/></div>
         <div><img src="/static/images/CSS.svg"/></div>
         <div><img src="/static/images/Github-Dark.svg"/></div>
-        <div class="flex col-span-5">
-           <img src="https://www.hackthebox.com/badge/image/782594" alt="hackthebox_badge"/>
+        <div class="col-span-5">
+            <a href="https://app.hackthebox.com/profile/782594">
+                <img src="https://www.hackthebox.com/badge/image/782594" alt="hackthebox_badge" class="w-full"/>
+            </a>
         </div>
        </div> 
        <div class="col-span-2" > 
